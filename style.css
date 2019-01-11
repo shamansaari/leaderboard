@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5F5;
+    font-family: 'Jua', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    padding: 1em;
+    background: #383838;
+    color: white;
+    text-align: center;
+}
+
+header:hover .icon:nth-child(2),
+header:hover h1 {
+    color: #CDDC39;
+}
+
+header:hover .icon:first-child, header:hover .icon:last-child {
+    color: #BDBDBD;
+}
+
+header .icon {
+    font-size: 4em;
+}
+
+article,
+article>div {
+    border-top: 5px solid #C2B480;
+    border-left: 5px solid #C2B480;
+    border-right: 5px solid #C2B480;
+    padding: 1em;
+    background-color: white;
+}
+
+article>div:nth-child(3) ~ div {
+    background: #e8e7e5;
+}
+
+article > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+span.country::first-letter {
+    font-size: 1.5em;
+}
+
+article, article>div:last-child {
+    border-bottom: 5px solid #C2B480;
+}
+
+article {
+    background-color: #383838;
+    font-size: 1.5em;
+    width: 500px;
+    margin: 1em auto;
+}
+
+.trophee {
+    font-size: 2em;
+}
+
+article > div:first-child .trophee {
+    color: gold;
+}
+
+article > div:nth-child(2) .trophee {
+    color: silver;
+}
+
+article > div:nth-child(3) .trophee {
+    color: #D77B1C;
+}
+
+footer {
+    padding: 2em;
+    background-color: #383838;
+    color: white;
+    text-align: center;
+}
+
+footer:hover .heart {
+    color: red;
+}
